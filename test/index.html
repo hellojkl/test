@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="placeholder首页" />
+    <meta name="description"  content="透视对手，告别没有数据指导的时代。" />
+    <title>placeholder首页</title>
+    <link rel="stylesheet" type="text/css" href="./css/universal.css"></link>
+    <link rel="stylesheet" type="text/css" href="./css/index.css"></link>
+    <script src="./js/echarts.min.js"></script>
+  </head>
+  <body>
+    <div class="header flex">
+        <div class="header_left">
+            <div class="logo">
+                <a href="javascript:;">
+                    <img src="https://cms-cdn.placeholder.co/Logo_f6bbd8b915.svg?width=384">
+                </a>
+            </div>
+        </div>
+        <div class="header_right">
+            <ul class="header_nav flex">
+                <li class="settings"><a href="javascript:;"><img src="./img/nav/settings.png"></a></li>
+                <li class="bell"><a href="javascript:;"><img src="./img/nav/bell.png"></a></li>
+                <li class="logoOut"><a href="javascript:;">Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_header flex">
+            <div class="main_header_top">
+                <h2>Audience Overview</h2>
+                <p>Roseville, CA</p>
+            </div>
+            <div class="main_header_nav">
+                <ul class="flex">
+                    <li><a href="javascript:;">DASHBOARD</a></li>
+                    <li><a href="javascript:;">PROJECTS</a></li>
+                    <li><a href="javascript:;">CALENDAR</a></li>
+                    <li><a href="javascript:;">MAILBOX</a></li>
+                    <li><a href="javascript:;">SETTINGS</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="main_content_header flex">
+                <div class="banner">
+                    <div class="focus">
+                        <!-- 左边按钮 -->
+                        <a href="javascript:;" class="arrow-left">&lt;</a>
+                        <!-- 右边按钮 -->
+                        <a href="javascript:;" class="arrow-right">&gt;</a>
+                        <!-- 轮播图部分 -->
+                        <ul class="focus_ul">
+                          <li>
+                            <a href="javascript:;"><img src="./img/banner/1.png" alt="" /></a>
+                          </li>
+                          <li>
+                            <a href="javascript:;"><img src="./img/banner/2.png" alt="" /></a>
+                          </li>
+                          <li>
+                            <a href="javascript:;"><img src="./img/banner/3.png" alt="" /></a>
+                          </li>
+                          <li>
+                            <a href="javascript:;"><img src="./img/banner/4.png" alt="" /></a>
+                          </li>
+                          <li>
+                            <a href="javascript:;"><img src="./img/banner/5.png" alt="" /></a>
+                          </li>
+                          <!-- 这一张的作用是为了后面做无缝链接 -->
+                          <li>
+                            <a href="javascript:;"><img src="./img/banner/1.png" alt="" /></a>
+                          </li>
+                        </ul>
+                        <!-- 下面小圆点部分 -->
+                        <ol class="circle"></ol>
+                      </div>
+                </div>
+                <div class="support">
+                    <div class="support_top flex">
+                        <div class="left"><div class="title">Support Requests</div></div>                    
+                        <div class="right"><a class="viewAll">View All</a></div>
+                    </div>
+                    <div class="support_container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>TIME</th>
+                                    <th>USER NAME</th>
+                                    <th>STATUS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>9:45pm</td>
+                                <td>info@design.com</td>
+                                <td><a href="javascript:;">Solved</a></td>
+                                </tr>
+                                <tr>
+                                <td>9:45pm</td>
+                                <td>info@design.com</td>
+                                <td><a href="javascript:;">Solved</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="section">
+                    <div class="curve_chart" id="curve_chart"></div>
+                </div>
+                <div class="section flex">
+                    <div class="pie_chart" id="pie_chart" ></div>
+                    <div class="columnar_chart" id="columnar_chart"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <div class="content flex">
+            <div class="left">
+                <div class="logo">
+                    <img src="https://cms-cdn.placeholder.co/Logo_f6bbd8b915.svg?width=384">
+                </div>
+            </div>
+            <div class="right">
+                
+                <div class="flex">
+                    <div class="list">
+                        <ul>
+                            <li><a href="javascript:;">NEWS</a></li>
+                            <li><a href="javascript:;">CHANNELS</a></li>
+                            <li><a href="javascript:;">OVERVIEW</a></li>
+                            <li><a href="javascript:;">TIMELINE</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li><a href="javascript:;">SPORT</a></li>
+                            <li><a href="javascript:;">CULTURE</a></li>
+                            <li><a href="javascript:;">NATURE</a></li>
+                            <li><a href="javascript:;">MUSIC</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li><a href="javascript:;">WEATHER</a></li>
+                            <li><a href="javascript:;">AUTOS</a></li>
+                            <li><a href="javascript:;">LOCAL</a></li>
+                            <li><a href="javascript:;">SHOP</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li><a href="javascript:;">FUTURE</a></li>
+                            <li><a href="javascript:;">FOOD</a></li>
+                            <li><a href="javascript:;">EARTH</a></li>
+                            <li><a href="javascript:;">TV</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li><a href="javascript:;">TRAVEL</a></li>
+                            <li><a href="javascript:;">RADIO</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

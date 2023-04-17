@@ -1,0 +1,257 @@
+body {
+  background-color: #f5f8f9;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 20px 150px;
+  .header_nav {
+    li {
+      margin: 0 5px;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .logoOut {
+      margin-left: 30px;
+      a {
+        display: block;
+        width: 100px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        background-color: #f92525;
+        color: white;
+      }
+    }
+  }
+}
+.main {
+  padding: 30px 150px 50px;
+  .main_header {
+    margin-bottom: 30px;
+    .main_header_top {
+      h2 {
+        font-weight: 500;
+      }
+      p {
+        font-size: 12px;
+        color: #64686b;
+      }
+    }
+    .main_header_nav {
+      li {
+        margin: 0 30px;
+        a {
+          font-size: 12px;
+          padding: 5px 0;
+          font-weight: 600;
+        }
+        a:hover {
+          border-bottom: 2px solid #cccfd0;
+        }
+      }
+      li:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .main_content {
+    .main_content_header {
+      margin-bottom: 20px;
+      > div {
+        flex: 1;
+        background-color: #ffffff;
+        height: 280px;
+      }
+      //   轮播图
+      .banner {
+        margin-right: 20px;
+
+        .focus {
+          overflow: hidden;
+          position: relative;
+          width: 580px; //*
+          height: 260px; //*
+          margin: 10px auto;
+        }
+
+        .focus ul {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 600%;
+        }
+
+        .focus ul li {
+          float: left;
+        }
+
+        .focus ul li img {
+          width: 580px; //*
+          height: 260px; //*
+        }
+
+        a[class^="arrow"] {
+          /* 开始时隐藏箭头 */
+          display: none;
+          z-index: 1;
+          position: absolute;
+          cursor: pointer;
+          width: 30px;
+          height: 50px;
+          color: #fff;
+          text-align: center;
+          line-height: 50px;
+          font-weight: 700;
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .arrow-left {
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        .arrow-right {
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        .focus ol {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 10px;
+        }
+
+        .focus ol li {
+          cursor: pointer;
+          float: left;
+          list-style: none;
+          width: 10px;
+          height: 10px;
+          margin: 5px 6.5px 0;
+          background-color: #cbcdce;
+        }
+
+        .focus .current {
+          margin-top: 0;
+          height: 15px;
+          background-color: #ffffff;
+        }
+      }
+      .support {
+        // padding: 20px 0;
+        .support_top {
+          padding: 0 65px;
+          height: 100px;
+          border-bottom: 2px solid #efeff0;
+          margin-bottom: 20px;
+          .left {
+            font-size: 17px;
+          }
+          .right a {
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            width: 90px;
+            text-align: center;
+            font-size: 12px;
+            color: #676a6c;
+            border: 2px solid #e9e9ea;
+            cursor: pointer;
+          }
+        }
+        .support_container {
+          padding: 0 30px;
+          table {
+            width: 100%;
+            //   border: 1px solid black;
+
+            th,
+            td {
+              padding: 15px;
+              font-size: 12px;
+              height: 20px;
+              text-align: left;
+            }
+            th:nth-child(2),
+            td:nth-child(2) {
+              min-width: 200px;
+            }
+            a {
+              display: block;
+              height: 25px;
+              line-height: 25px;
+              width: 65px;
+              background-color: #5dd054;
+              color: white;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    .article {
+      .section {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        > div {
+          flex: 1;
+          background-color: #ffffff;
+          padding: 20px 30px;
+          text-align: center;
+          height: 375px;
+        }
+        .pie_chart {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  padding-bottom: 40px;
+  background-color: #1c1d20;
+
+  .content {
+    padding: 50px 150px;
+    background-color: #202124;
+  }
+  .left .logo {
+    background-color: red;
+    height: 30px;
+  }
+  .flex {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .right {
+    flex: 1;
+    .flex {
+      margin-left: 60px;
+
+      align-content: center;
+      div {
+        margin-right: 100px;
+        li {
+          margin-bottom: 10px;
+        }
+        a {
+          font-size: 12px;
+          color: white;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
